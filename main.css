@@ -1,0 +1,126 @@
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    background-image: url(images/45.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    background-color: rgba(24, 11, 139, 0.705);
+    border: 2pt solid rgba(31, 179, 216, 0.884);
+    padding: 10px;
+    border-radius: 3px;
+    align-items: center;
+    color: rgb(37, 176, 180);
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: expanded;
+}
+
+button:hover {
+    background-color: rgba(24, 11, 139, 0.705);
+    border: 8px solid rgb(243, 83, 43);
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(243, 83, 43);;
+}
+
+/* Styles for movie posters */
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: black;
+}
+
+.gallery__img:hover {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 18px;
+    border-radius: 4px;
+    background-color: rgb(243, 83, 43);
+}
+
+.gallery__item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9
+}
+
+.gallery__item--6{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.button_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
