@@ -73,7 +73,7 @@ async function clickedEvent(img_index, item_index){
  * @param event
  * 
  * id = image id for gallery image
- * event = Mouse ecent given by the action from our user
+ * event = Mouse event given by the action from our user
  * 
  * Our function will produce new songs from the clickedEvent based on the index of the image.
  */
@@ -100,7 +100,7 @@ function getSong(id, event) {
             clickedEvent(3,0)
             break;
         }
-        case 'fig5': { // Rise Against -  Savior
+        case 'fig5': { // Rise Against - Savior
             event.stopPropagation();
             clickedEvent(4,0)
             break;
